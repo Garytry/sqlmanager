@@ -1,0 +1,16 @@
+server:
+  port: 6325
+spring:
+  application:
+    name: provider
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/testdb?serverTimezone=UTC
+    username: root
+    password: root
+
+  flyway:
+    url: jdbc:mysql://localhost:3306/testdb?serverTimezone=UTC
+    schemas: testdb
+    user: root
+    password: root
